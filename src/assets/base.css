@@ -1,0 +1,59 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --v-gradient-main: linear-gradient(0deg, rgba(0,0,0,0.37625472552302175) 0%, rgba(83,51,237,1) 100%);
+  --v-egg-white: #f6f6f6e0;
+  --v-pure-white: #fff;
+
+  --v-main-purple: #3816e2;
+
+  --v-black-soft: #222222;
+  --v-black-mute: #282828;
+
+  --v-divider-light-1: rgba(60, 60, 60, 0.29);
+  --v-divider-light-2: rgba(60, 60, 60, 0.12);
+}
+
+@font-face {
+  font-family: 'designer';
+  src: url('./fonts/Designer.ttf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--v-black-mute);
+  background: var(--v-egg-white);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'verdana', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  text-decoration: none;
+  color: var(--v-black-soft);
+  cursor: pointer;
+}
+
+.text-secondary-title{
+  font-size: 1.1em;
+  font-weight: 700;
+  color:  var(--v-main-purple);
+}
+.link-custom{
+  font-size: 1.07em;
+  color: var(--v-main-purple);
+}
+.link-custom:hover{
+  text-decoration: underline;
+}
