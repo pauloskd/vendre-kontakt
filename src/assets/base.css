@@ -13,9 +13,11 @@
   --v-divider-light-2: rgba(60, 60, 60, 0.12);
 }
 
-@font-face {
-  font-family: 'designer';
-  src: url('./fonts/Designer.ttf');
+
+@import url("https://use.typekit.net/xkn1ddy.css");
+
+.container-fluid{
+  --bs-gutter-x: 0;  
 }
 
 *,

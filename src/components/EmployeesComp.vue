@@ -22,7 +22,7 @@ export default {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 50px;        
-    }
+    }    
 
     .employees .employee{
         padding: 1rem;
@@ -30,6 +30,7 @@ export default {
         transition: all 0.2s ease;
 
     }
+    
     
     .employees .employee:hover{
         box-shadow: 
@@ -49,6 +50,21 @@ export default {
     .employees .employee img{
         border-radius: 50%;
         object-fit: cover;
+        animation: pulse-effect 3s infinite cubic-bezier(0.52, 0.54, 0.52, 0.53);              
+    }
+
+    @keyframes pulse-effect{
+        0% { 
+           box-shadow: 0 0 7px 0.2px var(--v-main-purple);
+        }
+        
+        70% { 
+            box-shadow: 0 0 10px 3px var(--v-main-purple);
+        }
+        
+        100% { 
+            box-shadow: 0 0 7px 0.2px var(--v-main-purple);
+        }
     }
 
     @media screen and (max-width: 1000px) {
