@@ -72,7 +72,7 @@ export default {
   }
 
   .homeIntroWrapper .hero{
-    background: linear-gradient(#1a0f514f, #0d053462), url('../assets/bilder/foretag-grupp-bild.jpeg'), no-repeat;
+    background: linear-gradient(#00000070, transparent), url('../assets/bilder/foretag-grupp-bild.jpeg'), no-repeat;
     background-size: cover;
     padding-block: 5em;
     display: flex;
@@ -82,13 +82,24 @@ export default {
   }
 
   .homeIntroWrapper .hero h1{
+    width: 100%;
     font-family: "neo-sans", sans-serif;
     font-style: italic;
-    font-size: 5em;
+    font-size: 17em;
     font-weight: 900;
+    text-align: center;
     text-transform: uppercase;
-    text-shadow: 0 .125rem .5rem #000;
-    color: var(--v-pure-white);  
+    background: linear-gradient(90deg, #6f58ee, #37229c, #6f58ee) 0 0 / 300% 100%;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: hero-text-gradient 10s linear infinite;
+  }
+
+  @keyframes hero-text-gradient {
+   to {
+      background-position: 300% 0;
+    }
   }
 
   .homeIntroWrapper .hero .description-container{
