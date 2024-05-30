@@ -2,11 +2,8 @@
   <div class="container-fluid">
     <div class="homeIntroWrapper mx-auto">
       <div class="hero">
-        <h1>Vilka är vi?</h1>
-        <div class="description-container">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis temporibus recusandae ut soluta molestias vel eum vitae, praesentium, optio itaque, deserunt ratione voluptas. Voluptates quaerat, ad placeat laudantium atque ullam ratione animi vitae facere consequuntur porro recusandae explicabo dolorum vel cumque dicta fugiat magni nulla provident minus mollitia pariatur quisquam similique quas? Sit illum, quis aliquid illo quisquam exercitationem officiis est quos commodi magni hic consectetur possimus enim odio alias minima, pariatur ut recusandae ab explicabo? Possimus obcaecati quo officia incidunt provident repellat, beatae quia corporis commodi maiores. Iste, ipsum libero nulla accusantium corrupti expedita qui commodi nobis ducimus similique.</p>
-        </div>
       </div>
+      <h1>Vilka är vi?</h1>        
         
 
       <!-- Employees Data -->
@@ -72,16 +69,11 @@ export default {
   }
 
   .homeIntroWrapper .hero{
-    background: linear-gradient(#00000070, transparent), url('../assets/bilder/foretag-grupp-bild.jpeg'), no-repeat;
-    background-size: cover;
-    padding-block: 5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
+    background: linear-gradient(#2b2161a5 , transparent), url('../assets/bilder/foretag-grupp-bild.jpeg') center top / cover no-repeat;
+    padding-block: 10em;    
   }
 
-  .homeIntroWrapper .hero h1{
+  .homeIntroWrapper h1{
     width: 100%;
     font-family: "neo-sans", sans-serif;
     font-style: italic;
@@ -94,20 +86,13 @@ export default {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: hero-text-gradient 10s linear infinite;
+    margin-block: 3rem 1rem;
   }
 
   @keyframes hero-text-gradient {
    to {
       background-position: 300% 0;
     }
-  }
-
-  .homeIntroWrapper .hero .description-container{
-    max-width: 800px;
-    backdrop-filter: blur(10px);
-    background: #00000035;
-    border-radius: 5px;
-    padding: 1rem;
   }
 
   .homeIntroWrapper .hero .description-container p{    
