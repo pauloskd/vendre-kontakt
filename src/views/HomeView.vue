@@ -85,7 +85,7 @@ export default {
     width: 100%;
     font-family: "neo-sans", sans-serif;
     font-style: italic;
-    font-size: 10em;
+    font-size: clamp(5em, 50%, 10em);
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
